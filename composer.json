@@ -1,0 +1,29 @@
+{
+	"name": "snayper911/full911",
+	"config": {
+        "sort-packages": true
+    },
+    "require": {
+		"php": ">=7.1.0",
+		"illuminate/database": "^5.6",
+		"monolog/monolog": "^1.23",
+		"symfony/http-foundation": "^4.1",
+		"symfony/routing": "^4.1",
+		"twig/twig": "^2.0",
+		"zendframework/zend-config-aggregator": "^1.1",
+		"zendframework/zend-servicemanager": "^3.3"
+	},
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "src/",
+            "App\\": "app/",
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --stderr --colors=always"
+    }
+}

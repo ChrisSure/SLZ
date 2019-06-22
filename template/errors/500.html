@@ -1,0 +1,13 @@
+{% extends 'layouts/layout.html' %}
+
+{% block content %}
+    <main style="padding: 20px;margin-top: 20px;border-radius: 4px;border: 3px solid #FBC2C2;background-color: #fff;">
+        <h1>Exception: {{ message }}</h1>
+        <hr/>
+        <p><b>Code: {{ code }}</b></p>
+        <p>{{ file }} on line {{ line }}</p>
+        {% for er in error %}
+        <p>{{ er.file }} on line {{ er.line }}</p>
+        {% endfor %}
+    </main>
+{% endblock %}
